@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3982E5">
+
+    <Button
+        android:id="@+id/main_bg"
+        android:layout_width="1228dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/curve_divider"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!--android:textColor="#424242"-->
+
+    <Button
+        android:id="@+id/nav_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/button_selector"
+        android:fontFamily="@font/lilita_one"
+        android:gravity="center_vertical"
+        android:paddingStart="35dp"
+        android:text="Navigation"
+        android:textAllCaps="false"
+        android:textColor="#3982E5"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/loc_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/main_bg"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/loc_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/button_selector"
+        android:fontFamily="@font/lilita_one"
+        android:gravity="center_vertical"
+        android:paddingStart="35dp"
+        android:text="Location"
+        android:textAllCaps="false"
+        android:textColor="#3982E5"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/map_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/map_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="320dp"
+        android:background="@drawable/button_selector"
+        android:fontFamily="@font/lilita_one"
+        android:gravity="center_vertical"
+        android:paddingStart="35dp"
+        android:text="Map"
+        android:textAllCaps="false"
+        android:textColor="#3982E5"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/week_num"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="267dp"
+        android:fontFamily="@font/baloo"
+        android:text="Week"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/week_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.117" />
+
+    <ProgressBar
+        android:id="@+id/week_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="15dp"
+        android:theme="@style/ThemeOverlay.MySwitch5"
+        android:translationZ="90dp"
+        app:layout_constraintBottom_toTopOf="@+id/main_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/nav_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:translationZ="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_button"
+        app:layout_constraintEnd_toEndOf="@+id/nav_button"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="@+id/nav_button"
+        app:layout_constraintTop_toTopOf="@+id/nav_button"
+        app:srcCompat="@drawable/new_nav_icon_foreground" />
+
+    <ImageView
+        android:id="@+id/loc_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:translationZ="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/loc_button"
+        app:layout_constraintEnd_toEndOf="@+id/loc_button"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="@+id/loc_button"
+        app:layout_constraintTop_toTopOf="@+id/loc_button"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/new_loc_icon_foreground" />
+
+    <ImageView
+        android:id="@+id/map_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:translationZ="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/map_button"
+        app:layout_constraintEnd_toEndOf="@+id/map_button"
+        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintStart_toStartOf="@+id/map_button"
+        app:layout_constraintTop_toTopOf="@+id/map_button"
+        app:srcCompat="@drawable/new_map_icon_foreground" />
+
+    <TextView
+        android:id="@+id/one_NUS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/lilita_one"
+        android:text="oneNUS"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:translationZ="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.779"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map_button"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/nus_background"
+        android:layout_width="681dp"
+        android:layout_height="568dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginBottom="30dp"
+        android:translationZ="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map_button"
+        app:srcCompat="@mipmap/nus_main_pic_foreground" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

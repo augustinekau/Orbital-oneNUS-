@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map_card"
+    android:background="@drawable/rounded_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/map_card_details_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/school_pic_round" />
+
+    <TextView
+        android:id="@+id/map_card_details_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:fontFamily="@font/baloo"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="hi"
+        android:textSize="20sp"
+        android:paddingEnd="49dp"
+        android:paddingStart="49dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map_card_details_image" />
+
+    <TextView
+        android:id="@+id/map_card_details_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:text="hello"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map_card_details_name" />
+
+    <Button
+        android:id="@+id/map_card_details_cross_button"
+        android:layout_width="49dp"
+        android:layout_height="44dp"
+        android:background="@drawable/cross_clear_button_foreground"
+        android:backgroundTint="#B7000000"
+        android:translationZ="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/map_card_details_nav_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/new_nav_icon_foreground"
+        android:translationZ="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/map_card_details_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/map_card_details_description" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

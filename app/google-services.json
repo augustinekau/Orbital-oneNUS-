@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "376832047818",
+    "firebase_url": "https://onenusv1.firebaseio.com",
+    "project_id": "onenusv1",
+    "storage_bucket": "onenusv1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376832047818:android:b847b7bf059ce2bbf8d233",
+        "android_client_info": {
+          "package_name": "com.twocoders.onenus_v1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "376832047818-303dkmma6ao6o7u35fni3mep7jic6ea9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.twocoders.onenus_v1",
+            "certificate_hash": "98e7b486df6f6fdee32eff9844eb44de7de2b506"
+          }
+        },
+        {
+          "client_id": "376832047818-h00tmktrqp3qqcok7ttffs2gvtrbpfmf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4g-8F9j8Mzp_whhBmoZQHxWoJaSoAQUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "376832047818-h00tmktrqp3qqcok7ttffs2gvtrbpfmf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

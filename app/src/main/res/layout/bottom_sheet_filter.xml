@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet_filter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_sliding_panel"
+    android:orientation="vertical"
+    app:behavior_peekHeight="20dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <View
+        android:id="@+id/hi"
+        android:layout_width="40dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/pill_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/scroll_view"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hi">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/nested_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Switch
+                android:id="@+id/filter_Administrative_Offices"
+                android:layout_width="205dp"
+                android:layout_height="60dp"
+                android:paddingLeft="15dp"
+                android:text="Administrative Offices"
+                android:theme="@style/ThemeOverlay.MySwitch1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Switch
+                android:id="@+id/filter_Banks_ATMs"
+                android:layout_width="205dp"
+                android:layout_height="60dp"
+                android:theme="@style/ThemeOverlay.MySwitch2"
+                android:paddingLeft="15dp"
+                android:text="Banks/ ATMs"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/filter_Administrative_Offices"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Switch
+                android:id="@+id/filter_Bus_Stops"
+                android:layout_width="205dp"
+                android:layout_height="60dp"
+                android:theme="@style/ThemeOverlay.MySwitch3"
+                android:paddingLeft="15dp"
+                android:text="Bus Stops"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/filter_Administrative_Offices" />
+
+            <Switch
+                android:id="@+id/filter_Car_Parks"
+                android:layout_width="205dp"
+                android:layout_height="60dp"
+                android:theme="@style/ThemeOverlay.MySwitch4"
+                android:paddingLeft="15dp"
+                android:text="Car Parks"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/filter_Bus_Stops"
+                app:layout_constraintTop_toBottomOf="@+id/filter_Banks_ATMs" />
+
+            <Switch
+                android:id="@+id/filter_Convenience_Store_Supermarkets"
+                android:layout_width="205dp"
+                android:layout_height="60dp"
+                android:theme="@style/ThemeOverlay.MySwitch5"
+                android:paddingLeft="15dp"
+                android:text="Convenience Stores/ \nSupermarkets"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/filter_Bus_Stops" />
+
+            <Switch
+                android:id="@+id/filter_Cultural_Facilities"
+                android:layout_width="205dp"
+                android:layout_height="60dp"
+                android:theme="@style/ThemeOverlay.MySwitch6"
+                android:paddingLeft="15dp"
+                android:text="Cultural Facilities"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/filter_Convenience_Store_Supermarkets"
+                app:layout_constraintTop_toBottomOf="@+id/filter_Car_Parks" />
+
+            <Switch
+                android:id="@+id/filter_Faculties_Schools"
+                android:layout_width="205dp"
+                android:layout_height="60dp"
+                android:theme="@style/ThemeOverlay.MySwitch7"
+                android:paddingLeft="15dp"
+                android:text="Faculties/ Schools"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/filter_Convenience_Store_Supermarkets" />
+
+            <Switch
+                android:id="@+id/filter_Food_Courts"
+                android:layout_width="205dp"
+                android:layout_height="60dp"
+                android:theme="@style/ThemeOverlay.MySwitch8"
+                android:paddingLeft="15dp"
+                android:text="Food Courts"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/filter_Faculties_Schools"
+                app:layout_constraintTop_toBottomOf="@+id/filter_Cultural_Facilities" />
+
+            <Switch
+                android:id="@+id/filter_Health_Care_Amenities"
+                android:layout_width="205dp"
+                android:layout_height="60dp"
+                android:theme="@style/ThemeOverlay.MySwitch9"
+                android:paddingLeft="15dp"
+                android:text="Health Care Amenities"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/filter_Faculties_Schools" />
+
+            <Switch
+                android:id="@+id/filter_Lecture_Theatres"
+                android:layout_width="205dp"
+                android:layout_height="60dp"
+                android:theme="@style/ThemeOverlay.MySwitch10"
+                android:paddingLeft="15dp"
+                android:text="Lecture Theatres"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/filter_Health_Care_Amenities"
+                app:layout_constraintTop_toBottomOf="@+id/filter_Food_Courts" />
+
+            <Switch
+                android:id="@+id/filter_NUS_Libraries_Study_Areas"
+                android:layout_width="205dp"
+                android:layout_height="60dp"
+                android:theme="@style/ThemeOverlay.MySwitch11"
+                android:paddingLeft="15dp"
+                android:text="NUS Libraries"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/filter_Health_Care_Amenities" />
+
+            <Switch
+                android:id="@+id/filter_Printing_Services"
+                android:layout_width="205dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="1dp"
+                android:theme="@style/ThemeOverlay.MySwitch12"
+                android:paddingLeft="15dp"
+                android:text="Printing Services"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/filter_NUS_Libraries_Study_Areas"
+                app:layout_constraintTop_toBottomOf="@+id/filter_Lecture_Theatres" />
+
+            <Switch
+                android:id="@+id/filter_Residential_Areas"
+                android:layout_width="205dp"
+                android:layout_height="60dp"
+                android:theme="@style/ThemeOverlay.MySwitch13"
+                android:paddingLeft="15dp"
+                android:text="Residential Areas"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/filter_NUS_Libraries_Study_Areas" />
+
+            <Switch
+                android:id="@+id/filter_Restaurants_Cafes"
+                android:layout_width="205dp"
+                android:layout_height="60dp"
+                android:theme="@style/ThemeOverlay.MySwitch14"
+                android:paddingLeft="15dp"
+                android:text="Restaurants/ Cafes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/filter_Residential_Areas"
+                app:layout_constraintTop_toBottomOf="@+id/filter_Printing_Services" />
+
+            <Switch
+                android:id="@+id/filter_Sports_Facilities"
+                android:layout_width="205dp"
+                android:layout_height="60dp"
+                android:theme="@style/ThemeOverlay.MySwitch15"
+                android:paddingLeft="15dp"
+                android:text="Sports Facilities"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/filter_Residential_Areas" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

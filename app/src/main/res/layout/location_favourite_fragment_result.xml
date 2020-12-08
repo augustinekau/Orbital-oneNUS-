@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#ffffff"
+    app:cardCornerRadius="3dp"
+    app:cardUseCompatPadding="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/loc_fav_frag_result_constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/loc_fav_frag_result_text"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="105dp"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="UTown"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/drag_handle"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/loc_fav_frag_result_favourite_icon"
+            android:layout_width="35dp"
+            android:layout_height="70dp"
+            app:layout_constraintBottom_toBottomOf="@+id/loc_fav_frag_result_constraint_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/loc_fav_frag_result_constraint_layout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/fav_filled_icon_foreground" />
+
+        <ImageView
+            android:id="@+id/loc_fav_frag_result_map_icon"
+            android:layout_width="35dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="19dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/loc_fav_frag_result_favourite_icon"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/loc_fav_frag_result_constraint_layout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/new_map_icon_foreground" />
+
+        <ImageView
+            android:id="@+id/loc_fav_frag_result_nav_icon"
+            android:layout_width="35dp"
+            android:layout_height="70dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/loc_fav_frag_result_map_icon"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/new_nav_icon_foreground" />
+
+        <ImageView
+            android:id="@+id/drag_handle"
+            android:layout_width="35dp"
+            android:layout_height="70dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/drag_handle_foreground" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

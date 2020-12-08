@@ -1,0 +1,92 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#7A7A7A</item>
+        <item name="colorPrimaryDark">#4092FF</item>
+        <item name="colorAccent">#B6B6B6</item>
+    </style>
+
+    <style name="MyMapTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#7A7A7A</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#B6B6B6</item>
+    </style>
+
+    <style name="ThemeOverlay.MySwitch1" parent="">
+        <item name="android:colorControlActivated">#e6194B</item>
+        <item name="android:colorForeground">#42221f1f</item>
+    </style>
+
+    <style name="ThemeOverlay.MySwitch2" parent="">
+        <item name="android:colorControlActivated">#808000</item>
+        <item name="android:colorForeground">#42221f1f</item>
+    </style>
+
+    <style name="ThemeOverlay.MySwitch3" parent="">
+        <item name="android:colorControlActivated">#ffe119</item>
+        <item name="android:colorForeground">#42221f1f</item>
+    </style>
+
+    <style name="ThemeOverlay.MySwitch4" parent="">
+        <item name="android:colorControlActivated">#4363d8</item>
+        <item name="android:colorForeground">#42221f1f</item>
+    </style>
+
+    <style name="ThemeOverlay.MySwitch5" parent="">
+        <item name="android:colorControlActivated">#f58231</item>
+        <item name="android:colorForeground">#42221f1f</item>
+    </style>
+
+    <style name="ThemeOverlay.MySwitch6" parent="">
+        <item name="android:colorControlActivated">#911eb4</item>
+        <item name="android:colorForeground">#42221f1f</item>
+    </style>
+
+    <style name="ThemeOverlay.MySwitch7" parent="">
+        <item name="android:colorControlActivated">#42d4f4</item>
+        <item name="android:colorForeground">#42221f1f</item>
+    </style>
+
+    <style name="ThemeOverlay.MySwitch8" parent="">
+        <item name="android:colorControlActivated">#bfef45</item>
+        <item name="android:colorForeground">#42221f1f</item>
+    </style>
+
+    <style name="ThemeOverlay.MySwitch9" parent="">
+        <item name="android:colorControlActivated">#fabed4</item>
+        <item name="android:colorForeground">#42221f1f</item>
+    </style>
+
+    <style name="ThemeOverlay.MySwitch10" parent="">
+        <item name="android:colorControlActivated">#469990</item>
+        <item name="android:colorForeground">#42221f1f</item>
+    </style>
+
+    <style name="ThemeOverlay.MySwitch11" parent="">
+        <item name="android:colorControlActivated">#dcbeff</item>
+        <item name="android:colorForeground">#42221f1f</item>
+    </style>
+
+    <style name="ThemeOverlay.MySwitch12" parent="">
+        <item name="android:colorControlActivated">#9A6324</item>
+        <item name="android:colorForeground">#42221f1f</item>
+    </style>
+
+    <style name="ThemeOverlay.MySwitch13" parent="">
+        <item name="android:colorControlActivated">#800000</item>
+        <item name="android:colorForeground">#42221f1f</item>
+    </style>
+
+    <style name="ThemeOverlay.MySwitch14" parent="">
+        <item name="android:colorControlActivated">#aaffc3</item>
+        <item name="android:colorForeground">#42221f1f</item>
+    </style>
+
+    <style name="ThemeOverlay.MySwitch15" parent="">
+        <item name="android:colorControlActivated">#000075</item>
+        <item name="android:colorForeground">#42221f1f</item>
+    </style>
+
+</resources>
